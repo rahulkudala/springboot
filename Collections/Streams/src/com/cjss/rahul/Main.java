@@ -54,5 +54,8 @@ public class Main {
         str.forEach(System.out::println);
 
         str.stream().filter(v->v.contains("rahul")).forEach(i->System.out.println(i));
+
+
+        System.out.println(str);
     }
 }
