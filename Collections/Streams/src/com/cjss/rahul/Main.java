@@ -52,5 +52,7 @@ public class Main {
         Optional<Integer> o = nl.stream().reduce((total,num) -> total + num);
         System.out.println(o.get());
         str.forEach(System.out::println);
+
+        str.stream().filter(v->v.contains("rahul")).forEach(i->System.out.println(i));
     }
 }
