@@ -59,7 +59,6 @@ public class Main {
        // System.out.println(o.get());
         //str.forEach(System.out::println);
 
-        String b = " ";
         List<String> o = str.stream().filter(a -> (a.startsWith("k")) || (a.startsWith("s")) ).collect(Collectors.toList());
         o.stream().forEach(result -> System.out.println(" hi " + result));
 
