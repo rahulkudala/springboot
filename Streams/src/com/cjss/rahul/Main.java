@@ -40,7 +40,7 @@ public class Main {
         List<Integer> t2= nl.stream().filter(a -> a%5==0).map(x->x*x).collect(Collectors.toList());
         System.out.println(t2);
 
-        List<String> str = Arrays.asList("rahul","sindhu","karthik","sunil","siddharth","varun","shambhavi","holi","kudala");
+        List<String> str = Arrays.asList("rahul","sindhu", "karthik","sunil","siddharth","varun","shambhavi","holi","kudala");
         List<String> phones = Arrays.asList("IPhone 12","IPhone 11", "Sony","Samsung Galaxy S10", "OnePlus Nord", "Samsung Galaxy S20", "Nokia 1100");
         List<String> ms = str.stream().filter(a -> a.length()<6).sorted().collect(Collectors.toList());
       //List<String> j = str.stream().filter(){x -> phones.stream().map()};
