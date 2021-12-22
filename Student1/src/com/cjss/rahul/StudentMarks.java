@@ -1,5 +1,9 @@
 package com.cjss.rahul;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class StudentMarks {
 
     private Integer rno;
@@ -7,6 +11,7 @@ public class StudentMarks {
     private Integer subjectNo;
     private Integer marks;
 
+    List<Subjects> subs = new ArrayList<>();
 
     public Integer getRno() {
         return rno;

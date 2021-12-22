@@ -1,5 +1,5 @@
 package com.cjss.rahul;
-import java.sql.SQLOutput;
+
 import java.util.*;
 
 public class Main {
@@ -15,8 +15,10 @@ public class Main {
         List<Subjects> subl = new ArrayList<>();
         List<StudentMarks> sml = new ArrayList<>();
 
+
+
         for(int i=1;i<=n;i++){
-            System.out.println("Enter Student"+i+" details: ");
+            System.out.println("Enter Student " + i + " details: ");
 
             Student st = new Student();
             StudentFee sf = new StudentFee();
@@ -29,15 +31,23 @@ public class Main {
             System.out.print("Enter Branch: ");     s.nextLine();    st.setBranch(s.nextLine());
             System.out.print("Enter year: ");        st.setYear(s.nextInt());
             sm.setRno(st.getRno()); sm.setYear(st.getYear());
-            sl.add(st);
+
 
             System.out.print("Enter Fee amount "); sf.setAmount(s.nextInt());
             System.out.print("Enter Fee date ");  s.nextLine();    sf.setDate(s.nextLine());
+
+
+            System.out.println("Enter Subject Name: "); sub.setSubjectName(s.nextLine());
+            System.out.println("Enter Subject No: "); sub.setSubjectNo(s.nextInt());
+            sm.setSubjectNo(sub.getSubjectNo());
+            System.out.println("Enter Marks: "); sm.setMarks(s.nextInt());
+
+            subl.add(sub);
+            sl.add(st);
             sml.add(sm);
             sfl.add(sf);
 
         }
-
 
 
 
@@ -47,9 +57,15 @@ public class Main {
         }
 
      //   System.out.println(sl);
-        System.out.println(sl);
-        System.out.println(sml);
-        System.out.println(sfl);
+//        System.out.println(sl);
+//        System.out.println("*************************************************");
+//        System.out.println(sml);
+//        System.out.println("*************************************************");
+//        System.out.println(sfl);
+//        System.out.println("*************************************************");
+//        System.out.println(subl);
+
+
         /*for(Student o : sl)
         {
             System.out.println(o);
