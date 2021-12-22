@@ -60,7 +60,7 @@ public class Main {
         //str.forEach(System.out::println);
 
         List<String> o = str.stream().filter(a -> (a.startsWith("k")) || (a.startsWith("s")) ).collect(Collectors.toList());
-        o.stream().forEach(result -> System.out.println(" hi " + result));
+       // o.stream().forEach(result -> System.out.println(" hi " + result));
 
     }
 }
