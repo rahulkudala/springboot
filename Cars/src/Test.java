@@ -34,13 +34,9 @@ public class Test {
         dealers.add(dealerDetails2);
 
         for (DealerDetails dealer: dealers) {
-            System.out.println("Dealer name: " + dealer.getName() +
-                    " address: " + dealer.getAddress() +
-                    " phoneNo:" + dealer.getPhoneNo());
+            System.out.println("Dealer name: " + dealer.getName() + " address: " + dealer.getAddress() + " phoneNo:" + dealer.getPhoneNo());
             for (Cars car: dealer.getCars()) {
-                System.out.println("Car name: " + car.getName() +
-                        " quantity:" + car.getQuantity() +
-                        " price:" + car.getPrice());
+                System.out.println("Car name: " + car.getName() + " quantity:" + car.getQuantity() + " price:" + car.getPrice());
             }
             System.out.println();
         }

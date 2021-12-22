@@ -16,7 +16,7 @@ public class Main {
         List<StudentMarks> sml = new ArrayList<>();
 
 
-
+        List<Student> li = new ArrayList<>();
         for(int i=1;i<=n;i++){
             System.out.println("Enter Student " + i + " details: ");
 
@@ -33,20 +33,26 @@ public class Main {
             sm.setRno(st.getRno()); sm.setYear(st.getYear());
 
 
-            System.out.print("Enter Fee amount "); sf.setAmount(s.nextInt());
+            /*System.out.print("Enter Fee amount "); sf.setAmount(s.nextInt());
             System.out.print("Enter Fee date ");  s.nextLine();    sf.setDate(s.nextLine());
 
 
             System.out.println("Enter Subject Name: "); sub.setSubjectName(s.nextLine());
             System.out.println("Enter Subject No: "); sub.setSubjectNo(s.nextInt());
             sm.setSubjectNo(sub.getSubjectNo());
-            System.out.println("Enter Marks: "); sm.setMarks(s.nextInt());
+            System.out.println("Enter Marks: "); sm.setMarks(s.nextInt());*/
 
             subl.add(sub);
             sl.add(st);
             sml.add(sm);
             sfl.add(sf);
+            st.setSml(Arrays.asList(sm));
 
+            li.add(st);
+
+        }
+        for(Student stu : li){
+            System.out.println(stu.getRno() + "   " + stu.getName());
         }
 
 

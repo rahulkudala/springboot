@@ -1,11 +1,14 @@
 package com.cjss.rahul;
 
+import java.util.List;
+
 public class Student {
 
     private Integer rno;
     private String name;
     private String branch;
     private Integer year;
+    private List<StudentMarks> sml;
 
     public Integer getRno() {
         return rno;
@@ -39,7 +42,13 @@ public class Student {
         this.year = year;
     }
 
+    public List<StudentMarks> getSml() {
+        return sml;
+    }
 
+    public void setSml(List<StudentMarks> sml) {
+        this.sml = sml;
+    }
 
     @Override
     public String toString() {

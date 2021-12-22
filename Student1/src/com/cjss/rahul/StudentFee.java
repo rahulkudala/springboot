@@ -6,8 +6,6 @@ public class StudentFee {
     private double amount;
     private String date;
 
-
-
     public Integer getRno() {
         return rno;
     }

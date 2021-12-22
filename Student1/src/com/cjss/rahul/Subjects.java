@@ -1,9 +1,12 @@
 package com.cjss.rahul;
 
+import java.util.List;
+
 public class Subjects {
 
     private Integer subjectNo;
     private String subjectName;
+    private List<StudentMarks> sml;
 
 
     public Integer getSubjectNo() {
