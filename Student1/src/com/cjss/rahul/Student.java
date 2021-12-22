@@ -38,4 +38,16 @@ public class Student {
     public void setYear(Integer year) {
         this.year = year;
     }
+
+
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "rno=" + rno +
+                ", name='" + name + '\'' +
+                ", branch='" + branch + '\'' +
+                ", year=" + year +
+                '}';
+    }
 }

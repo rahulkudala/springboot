@@ -7,6 +7,7 @@ public class StudentFee {
     private String date;
 
 
+
     public Integer getRno() {
         return rno;
     }
@@ -30,4 +31,15 @@ public class StudentFee {
     public void setDate(String date) {
         this.date = date;
     }
+
+    @Override
+    public String toString() {
+        return "StudentFee{" +
+                "rno=" + rno +
+                ", amount=" + amount +
+                ", date='" + date + '\'' +
+                '}';
+    }
+
+
 }

@@ -39,4 +39,14 @@ public class StudentMarks {
     public void setMarks(Integer marks) {
         this.marks = marks;
     }
+
+    @Override
+    public String toString() {
+        return "StudentMarks{" +
+                "rno=" + rno +
+                ", year=" + year +
+                ", subjectNo=" + subjectNo +
+                ", marks=" + marks +
+                '}';
+    }
 }

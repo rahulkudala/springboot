@@ -1,22 +1,60 @@
 package com.cjss.rahul;
-
-import java.util.Scanner;
+import java.sql.SQLOutput;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        Student s1 = new Student();
-      //  System.out.print("Enter No. of Students: ");
 
-
-        Student st = new Student();
+        System.out.print("Enter No. of Students: ");
         int n = s.nextInt();
-        for (int i=1;i<=n;i++) {
-            st.setRno(100);
-        }
-        s1.setName(s.nextLine());
 
-	// write your code here
+        List<Student> sl = new ArrayList<>();
+        List<StudentFee> sfl = new ArrayList<>();
+        List<Subjects> subl = new ArrayList<>();
+        List<StudentMarks> sml = new ArrayList<>();
+
+        for(int i=1;i<=n;i++){
+            System.out.println("Enter Student"+i+" details: ");
+
+            Student st = new Student();
+            StudentFee sf = new StudentFee();
+            StudentMarks sm = new StudentMarks();
+            Subjects sub = new Subjects();
+
+            System.out.print("Enter Name: ");       s.nextLine();    st.setName(s.nextLine());
+            System.out.print("Enter Roll No: ");     st.setRno(s.nextInt());
+            sf.setRno(st.getRno()); sm.setRno(st.getRno());
+            System.out.print("Enter Branch: ");     s.nextLine();    st.setBranch(s.nextLine());
+            System.out.print("Enter year: ");        st.setYear(s.nextInt());
+            sm.setRno(st.getRno()); sm.setYear(st.getYear());
+            sl.add(st);
+
+            System.out.print("Enter Fee amount "); sf.setAmount(s.nextInt());
+            System.out.print("Enter Fee date ");  s.nextLine();    sf.setDate(s.nextLine());
+            sml.add(sm);
+            sfl.add(sf);
+
+        }
+
+
+
+
+        for(int i=1;i<=5;i++){
+
+
+        }
+
+     //   System.out.println(sl);
+        System.out.println(sl);
+        System.out.println(sml);
+        System.out.println(sfl);
+        /*for(Student o : sl)
+        {
+            System.out.println(o);
+        }*/
+
+        // write your code here
     }
 }
