@@ -8,6 +8,13 @@ public class Subjects {
     private String subjectName;
     private List<StudentMarks> sml;
 
+    public List<StudentMarks> getSml() {
+        return sml;
+    }
+
+    public void setSml(List<StudentMarks> sml) {
+        this.sml = sml;
+    }
 
     public Integer getSubjectNo() {
         return subjectNo;

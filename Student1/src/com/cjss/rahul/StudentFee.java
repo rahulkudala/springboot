@@ -1,10 +1,14 @@
 package com.cjss.rahul;
 
+import java.util.List;
+
 public class StudentFee {
 
     private Integer rno;
     private double amount;
     private String date;
+    private List<StudentFee> sfl;
+
 
     public Integer getRno() {
         return rno;

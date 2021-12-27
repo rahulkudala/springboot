@@ -10,8 +10,15 @@ public class StudentMarks {
     private Integer year;
     private Integer subjectNo;
     private Integer marks;
+    List<Subjects> subl;
 
-    List<Subjects> subs = new ArrayList<>();
+    public List<Subjects> getSubl() {
+        return subl;
+    }
+
+    public void setSubl(List<Subjects> subl) {
+        this.subl = subl;
+    }
 
     public Integer getRno() {
         return rno;

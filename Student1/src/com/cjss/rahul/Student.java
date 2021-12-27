@@ -9,6 +9,14 @@ public class Student {
     private String branch;
     private Integer year;
     private List<StudentMarks> sml;
+    private List<StudentFee> sfl;
+
+/*    public Student(Integer rno, String name, String branch, Integer year) {
+        this.rno = rno;
+        this.name = name;
+        this.branch = branch;
+        this.year = year;
+    }*/
 
     public Integer getRno() {
         return rno;
@@ -48,6 +56,14 @@ public class Student {
 
     public void setSml(List<StudentMarks> sml) {
         this.sml = sml;
+    }
+
+    public List<StudentFee> getSfl() {
+        return sfl;
+    }
+
+    public void setSfl(List<StudentFee> sfl) {
+        this.sfl = sfl;
     }
 
     @Override

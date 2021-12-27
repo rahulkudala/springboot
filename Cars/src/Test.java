@@ -18,7 +18,7 @@ public class Test {
         car3.setPrice(151000);
 
         DealerDetails dealerDetails1 = new DealerDetails();
-        dealerDetails1.setName("Honda Gachibowli");
+        dealerDetails1.setName("Honda Gchibowli");
         dealerDetails1.setAddress("Gachibowli");
         dealerDetails1.setPhoneNo(9121341);
         dealerDetails1.setCars(Arrays.asList(car1, car2));
