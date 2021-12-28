@@ -17,7 +17,11 @@ public class PracticeController {
         ps.add(id,name);
     }
 
-
+    @PostMapping("/namesonly/{name1}/{name2}")
+    public void addName(@PathVariable String name1,
+                        @PathVariable String name2){
+        ps.addNames(name1,name2);
+    }
 
     @GetMapping("/get-emps")
     public Map<String, String> getAll(){
@@ -33,4 +37,6 @@ public class PracticeController {
     public String delete(@PathVariable String id){
         return ps.delete(id);
     }
+
+
 }

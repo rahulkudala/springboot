@@ -19,7 +19,6 @@ public class PracticeServices {
     }  // returning all emp info
 
     public String getId(String id){
-
         return emp.get(id);
     }   // returning emp by id
 
@@ -27,4 +26,9 @@ public class PracticeServices {
         return emp.remove(id);
     }  // deleting emp by id
 
+    private Map<String, String> nm = new HashMap<>();
+
+    public void addNames(String name1, String name2){
+        nm.put(name1,name2);
+    }
 }
