@@ -26,9 +26,21 @@ public class PracticeServices {
         return emp.remove(id);
     }  // deleting emp by id
 
+
+
     private Map<String, String> nm = new HashMap<>();
 
     public void addNames(String name1, String name2){
         nm.put(name1,name2);
+    }
+
+    public Map<String,String> getNames(){ return nm; }
+
+    public String getname(String name){
+        return nm.get(name);
+    }
+
+    public String deleteName(String name){
+        return nm.remove(name);
     }
 }
