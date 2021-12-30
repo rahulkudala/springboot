@@ -17,8 +17,6 @@ public class PracticeController {
         ps.add(id,name);
     }
 
-
-
     @GetMapping("/get-emps")
     public Map<String, String> getAll(){
         return ps.getAll();
@@ -30,13 +28,11 @@ public class PracticeController {
     }
 
     @DeleteMapping("/delete-emp/{id}")
-    public String delete(@PathVariable String id){
-        return ps.delete(id);
-    }
+    public String delete(@PathVariable String id){ return ps.delete(id); }
 
-    @PostMapping("/namesonly/{name1}/{name2}")
-    public void addName(@PathVariable String name1,
-                        @PathVariable String name2){
+    @RequestMapping(value = "/namesonly/{name1}/{name2}", method = RequestMethod.POST)
+    public void addName(@RequestParam String name1,
+                        @RequestParam String name2){
         ps.addNames(name1,name2);
     }
     @GetMapping("/getNames")
