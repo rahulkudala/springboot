@@ -25,9 +25,9 @@ public class Controller {
         return ser.getAll();
     }
 
-    @GetMapping("/getDealer/")
+   /* @GetMapping("/getDealer/")
     public List<Dealers> getDealer(@RequestParam String name){
         return ser.getDealer(name);
     }
-
+*/
 }

@@ -17,7 +17,6 @@ public class PracticeServices {
     public Map<String, String> getAll(){
         return emp;
     }  // returning all emp info
-
     public String getId(String id){
         return emp.get(id);
     }   // returning emp by id
