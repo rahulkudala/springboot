@@ -1,35 +1,38 @@
 package com.example.Validations_Practice.Controller;
 
-import com.example.Validations_Practice.Models.Theatre;
+import com.example.Validations_Practice.Entities.TheatreEntity;
+import com.example.Validations_Practice.Models.TheatreModel;
 import com.example.Validations_Practice.Services.ValidationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
-import java.util.Map;
 
 @RestController
-
 public class ValidationController {
 
-    @Autowired
+  /*  @Autowired
     ValidationService vs;
+    @Autowired
+    TheatreEntity theatreEntity;
     @PostMapping("/add")
-    public void addName( @Valid @RequestBody Theatre theatre)
+    public void addName(@Valid @RequestBody TheatreModel theatreModel)
     {
+        vs.add(theatreEntity);
+    }*/
 
-        vs.add(theatre);
-        //return "Checked";
-    }
-
-    @GetMapping("/get")
-    public Map<String,Theatre> getAll()
+/*    @GetMapping("/get")
+    public List<Theatre> getAll()
     {
 
         return vs.get();
-        //return "Checked";
-    }
+    }*/
+
+/*    @GetMapping("/getOne/{id}")
+    public Theatre getOne(Integer id)
+    {
+
+        return vs.getOne(id);
+    }*/
 
 }
